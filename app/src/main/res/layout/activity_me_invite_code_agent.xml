@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_bg"
+    android:orientation="vertical"
+    tools:context=".module.me.ui.InviteCodeAgentActivity">
+
+    <include layout="@layout/view_title_bar_style_one" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_white_shadow_bottom_normal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="我的邀请码"
+                    android:textColor="@color/color_black_dark" />
+
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="0XFFFFFFFF"
+                    android:textColor="@color/color_black_dark" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_white_shadow_bottom_normal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="因为你是代理人，所以您无法输入其他用户的邀请码"
+                android:textColor="@color/color_black_dark"
+                android:textSize="@dimen/size_text_14sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_white_shadow_bottom_normal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="获得奖励金额"
+                    android:textColor="@color/color_black_dark" />
+
+                <TextView
+                    android:id="@+id/tv_rewards_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/text1"
+                    android:text="321元"
+                    android:textColor="@color/color_red_peach" />
+
+
+                <Button
+                    android:id="@+id/btn_withdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_layout_green_style_one"
+                    android:text="去提现"
+                    android:textColor="@color/color_white_pure" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_white_shadow_grey_style_one"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="代理人规则"
+                    android:textColor="@color/color_black_dark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/agent_rule"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/size_text_16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@mipmap/bg_white_shadow_bottom_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="分享邀请码"
+                    android:textColor="@color/color_black_dark" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_weixin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_layout_white_style_one"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@mipmap/icon_share_weixin"
+                        android:gravity="center"
+                        android:text="微信好友"
+                        android:textColor="@color/color_normal_text"
+                        android:textSize="@dimen/size_text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_friend"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_layout_white_style_one"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@mipmap/icon_share_friend"
+                        android:gravity="center"
+                        android:text="朋友圈"
+                        android:textColor="@color/color_normal_text"
+                        android:textSize="@dimen/size_text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_qzone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_layout_white_style_one"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@mipmap/icon_share_qzone"
+                        android:gravity="center"
+                        android:text="QQ空间"
+                        android:textColor="@color/color_normal_text"
+                        android:textSize="@dimen/size_text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_qq"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_layout_white_style_one"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@mipmap/icon_share_qq"
+                        android:gravity="center"
+                        android:text="QQ"
+                        android:textColor="@color/color_normal_text"
+                        android:textSize="@dimen/size_text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_weibo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_layout_white_style_one"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@mipmap/icon_share_weibo"
+                        android:gravity="center"
+                        android:text="新浪微博"
+                        android:textColor="@color/color_normal_text"
+                        android:textSize="@dimen/size_text_14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

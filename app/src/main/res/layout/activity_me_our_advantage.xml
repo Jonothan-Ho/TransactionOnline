@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white_pure"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.home.ui.DescriptionActivity">
+
+    <include layout="@layout/view_title_bar_style_two" />
+
+    <!--<EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入您的优势"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textSize="@dimen/size_text_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_grey_light" />-->
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请输入您的优势\n\n请按1、2、3、4、5 等逻辑清楚的描述，便于赢得买家信赖，提升成交机会"
+        android:inputType="text|textMultiLine"
+        android:padding="15dp"
+        android:singleLine="false"
+        android:textColor="@color/color_normal_text"
+        android:textSize="@dimen/size_text_14sp" />
+
+
+</LinearLayout>
+

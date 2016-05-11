@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white_pure"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.message.MessageIndexFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="消息"
+        android:textColor="@color/color_black_dark"
+        android:textSize="@dimen/size_text_18sp" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/tv_back" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="2dp"
+        android:background="@color/color_grey_light" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_native"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

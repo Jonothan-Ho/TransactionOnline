@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/color_white_pure"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您还没有完善资料，需要完善资料才可以申请成为代理人，现在去完善吗？"
+        android:textColor="@color/color_black_dark"
+        android:textSize="@dimen/size_text_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_grey_style_one"
+            android:text="取消"
+            android:textColor="@color/color_white_pure"
+            android:textSize="@dimen/size_text_16sp" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_green_style_one"
+            android:text="确定"
+            android:textColor="@color/color_white_pure"
+            android:textSize="@dimen/size_text_16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

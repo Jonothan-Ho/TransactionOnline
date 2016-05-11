@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_bg"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.home.HomeIndexFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@mipmap/bg_white_shadow_bottom_normal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="买卖在线"
+        android:textSize="@dimen/size_text_18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@mipmap/bg_logo" />
+
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="精准营销-上买卖在线"
+            android:textColor="@color/color_black_dark"
+            android:textSize="@dimen/size_text_18sp" />-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="快速精准的匹配供需双方"
+            android:textColor="@color/color_grey_dark"
+            android:textSize="@dimen/size_text_18sp" />
+
+        <ImageButton
+            android:id="@+id/btn_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:src="@drawable/selector_btn_publish_style_one" />
+
+    </LinearLayout>
+
+    <!--<com.maimaizaixian.transactiononline.view.AutoScrollViewPager
+        android:id="@+id/viewpager_auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp" />-->
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_bg"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.me.ui.UnAgentSetActivity">
+
+    <include layout="@layout/view_title_bar_style_one" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_white_shadow_grey_style_one"
+        android:gravity="center"
+        android:text="您还不是买卖在线代理人\n申请成为代理人获得更多的奖励"
+        android:textColor="@color/color_black_dark"
+        android:textSize="@dimen/size_text_18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_white_shadow_bottom_normal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成为代理商的好处"
+            android:textColor="@color/color_black_dark"
+            android:textSize="@dimen/size_text_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/agent_benefit"
+            android:textColor="@color/color_normal_text"
+            android:textSize="@dimen/size_text_14sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_layout_bg_white_shadow_bottom"
+        android:drawableRight="@mipmap/icon_arrow_right"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="代理人规则" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_agent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_btn_green_style_one"
+            android:text="申请成为代理人"
+            android:textColor="@color/color_white_pure"
+            android:textSize="@dimen/size_text_16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

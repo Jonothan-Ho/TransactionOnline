@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_white_shadow_bottom_normal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现"
+            android:textColor="@color/color_black_dark"
+            android:textSize="@dimen/size_text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="245"
+            android:textColor="@color/color_red_peach"
+            android:textSize="@dimen/size_text_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元，可提现余额"
+            android:textColor="@color/color_black_dark"
+            android:textSize="@dimen/size_text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_balance_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5637"
+            android:textColor="@color/color_main"
+            android:textSize="@dimen/size_text_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="@color/color_black_dark"
+            android:textSize="@dimen/size_text_16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2015-10-10 16:00"
+        android:textColor="@color/color_normal_text"
+        android:textSize="@dimen/size_text_14sp" />
+
+</LinearLayout>

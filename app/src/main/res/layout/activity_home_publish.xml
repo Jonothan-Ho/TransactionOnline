@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white_pure"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.home.ui.PublishActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@mipmap/bg_white_shadow_bottom_normal"
+        android:elevation="1dp"
+        android:translationZ="1dp">
+
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_normal_white_pressed_greylight"
+            android:drawableLeft="@mipmap/btn_arrow_left"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="首页" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_back" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_native"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

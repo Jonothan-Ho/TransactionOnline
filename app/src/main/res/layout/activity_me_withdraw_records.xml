@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_bg"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.me.ui.WithdrawRecordsActivity">
+
+    <include layout="@layout/view_title_bar_style_one" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_white_shadow_bottom_normal"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="累计提现"
+            android:textColor="@color/color_black_dark"
+            android:textSize="@dimen/size_text_14sp" />
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFFF0000"
+            android:textSize="@dimen/size_text_14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="@color/color_black_dark"
+            android:textSize="@dimen/size_text_14sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_recycler_view_style_one" />
+
+
+</LinearLayout>

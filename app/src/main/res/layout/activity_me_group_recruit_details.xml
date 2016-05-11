@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_bg"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.me.ui.GroupRecruitDetailsActivity">
+
+    <include layout="@layout/view_title_bar_style_one" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成都地区招牌"
+                android:textColor="@color/color_black_dark"
+                android:textSize="@dimen/size_text_16sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2015-10-10 10:00"
+                android:textColor="@color/color_normal_text"
+                android:textSize="@dimen/size_text_16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="招聘要求"
+                android:textColor="@color/color_normal_text"
+                android:textSize="@dimen/size_text_16sp" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="招聘内容招聘内容招聘内容招聘内容"
+                android:textColor="@color/color_normal_text"
+                android:textSize="@dimen/size_text_14sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_layout_green_style_one"
+            android:text="提交简历"
+            android:textColor="@color/color_white_pure"
+            android:textSize="@dimen/size_text_16sp" />
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_layout_green_style_one"
+            android:text="一键拨号"
+            android:textColor="@color/color_white_pure"
+            android:textSize="@dimen/size_text_16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

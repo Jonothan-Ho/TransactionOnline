@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_root"
+    android:background="@drawable/selector_layout_white_style_one"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.maimaizaixian.transactiononline.view.CircleImageView
+        android:id="@+id/iv_portrait"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_portrait"
+        android:text="李XX"
+        android:textColor="@color/color_black_dark"
+        android:textSize="@dimen/size_text_18sp" />
+
+    <TextView
+        android:id="@+id/tv_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_name"
+        android:text="推荐"
+        android:textColor="@color/color_main"
+        android:textSize="@dimen/size_text_12sp" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_portrait"
+        android:text="破晓科技有限公司"
+        android:textColor="@color/color_normal_text"
+        android:textSize="@dimen/size_text_16sp" />
+
+    <TextView
+        android:id="@+id/tv_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_portrait"
+        android:layout_toRightOf="@+id/iv_portrait"
+        android:singleLine="true"
+        android:text="销售范围:互联网 办公文具 外包"
+        android:textColor="@color/color_blue_acid"
+        android:textSize="@dimen/size_text_16sp" />
+
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_name"
+        android:layout_alignParentRight="true"
+        android:text="四川 成都"
+        android:textColor="@color/color_normal_text"
+        android:textSize="@dimen/size_text_14sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white_pure"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消息未关闭，请先关闭消息"
+        android:textColor="@color/color_black_dark"
+        android:textSize="@dimen/size_text_16sp" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn_green_style_one"
+        android:text="去选择"
+        android:textColor="@color/color_white_pure"
+        android:textSize="@dimen/size_text_16sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.home.ui.MatchResultActivity">
+
+    <include layout="@layout/view_title_bar_style_four" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_white_pure"
+        android:padding="10dp">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/view_divider"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="时间"
+                android:textColor="@drawable/selector_text_normal_normaltext_checked_lightgreen" />
+
+            <RadioButton
+                android:id="@+id/radio_button2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="距离"
+                android:textColor="@drawable/selector_text_normal_normaltext_checked_lightgreen" />
+
+            <RadioButton
+                android:id="@+id/radio_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/icon_order_normal"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="规模"
+                android:textColor="@drawable/selector_text_normal_normaltext_checked_lightgreen" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/ibtn_mode"
+            android:background="@color/color_grey_dark" />
+
+        <ImageButton
+            android:id="@+id/ibtn_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:src="@drawable/selector_btn_list_page_with_arrow_mode" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_grey_light" />
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

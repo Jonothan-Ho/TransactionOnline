@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white_pure"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.home.ui.DescriptionActivity">
+
+    <include layout="@layout/view_title_bar_style_two" />
+
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请输入您的详细需求描述，便于精准的匹配到你想要的供应商/客戶信息，如：需求数量、相关参数、需求日期等等;"
+        android:inputType="text|textMultiLine"
+        android:padding="10dp"
+        android:singleLine="false"
+        android:textColor="@color/color_normal_text"
+        android:textSize="@dimen/size_text_14sp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/tv_upload"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_layout_grey_style_one"
+        android:drawableLeft="@mipmap/icon_upload_picture"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="上传照片"
+        android:textSize="@dimen/size_text_16sp" />
+
+</LinearLayout>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="四川省"
+        android:textColor="@color/color_normal_text"
+        android:textSize="@dimen/size_text_14sp" />
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="成都"
+        android:background="@drawable/selector_layout_white_style_one"
+        android:textColor="@color/color_normal_text"
+        android:textSize="@dimen/size_text_18sp" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_grey_light" />
+
+</LinearLayout>

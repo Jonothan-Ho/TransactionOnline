@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">买卖在线</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_product_display">ProductDisplayActivity</string>
+
+    <string name="agent_rule">1、用户注册：邀请注册的手机用户注册年龄阶段为1
+8-60岁之间；同一个姓名下的手机用户只能注册一个
+用户；违反以上规则的视为无效注册，不计算奖励；
+累计违反超过2次取消代理人资格\n
+2、客户维护：代理人需要对邀请的注册用户按买卖
+在线的客服服务标准进行客户维护；代理人不得超越
+买卖在线的官方政策给客户虚假承诺；\n
+3、为保障代理人利益：代理人推荐的用户，代理人
+负责按照买卖在线客户服务标准进行客户维护，凡是
+代理人推进的用户重复充值，都会享受充值金额的百
+分之十提成；但是如果被邀请注册的用户申请成为代
+理人的除外\n
+4、代理商只能发展一层下线；如果发展的下线会员
+申请为代理商后，则从代理商的下层会员自动删除；\n
+5、代理人只享受邀请用户提成励，不再享受邀请码
+奖励政策；
+    </string>
+
+
+    <string name="invite_rule">邀请一个用户注册可抵用5元推广费用；
+\n\n
+备注：用户年龄需要在18-50岁之间，否则视为无效用
+户，不给予奖励；</string>
+
+    <string name="agent_benefit">
+            代理人的利益：\n
+        1、足不出户，轻松创业当老板\n
+        2、推荐一个用户注册提成***元人民币；\n
+        3、代理人邀请的用户首期充值成功后，代理人充值金额提成百分之**
+    </string>
+
+</resources>

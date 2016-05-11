@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_grey_light"
+            android:padding="10dp"
+            android:text="系统给你推送了一条买家信息"
+            android:textColor="@color/color_black_dark"
+            android:textSize="@dimen/size_text_14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hint"
+                android:text="求购工业品"
+                android:textColor="@color/color_black_dark"
+                android:textSize="@dimen/size_text_16sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="9:00"
+                android:textColor="@color/color_normal_text"
+                android:textSize="@dimen/size_text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginTop="10dp"
+                android:text="你们在说什么？我怎么听不懂。"
+                android:textColor="@color/color_normal_text"
+                android:textSize="@dimen/size_text_14sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/tv_content"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycler_view"
+                android:layout_marginTop="10dp"
+                android:text="四川 成都"
+                android:textColor="@color/color_normal_text"
+                android:textSize="@dimen/size_text_14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+

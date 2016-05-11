@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white_pure"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.me.ui.CollectActivity">
+
+    <include layout="@layout/view_title_bar_style_four" />
+
+    <include
+        layout="@layout/layout_recycler_view_style_one"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout_edit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox_style_one"
+            android:text="  全选"
+            android:textColor="@color/color_normal_text"
+            android:textSize="@dimen/size_text_16sp" />
+
+        <Button
+            android:id="@+id/btn_cancel_collect"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_layout_red_style_one"
+            android:text="删除收藏"
+            android:textColor="@color/color_white_pure" />
+
+    </RelativeLayout>
+
+</LinearLayout>

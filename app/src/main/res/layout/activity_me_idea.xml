@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_bg"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.me.ui.IdeaActivity">
+
+    <include layout="@layout/view_title_bar_style_two" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="left"
+        android:hint="请输入您的意见与建议"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textColor="@color/color_normal_text"
+        android:textSize="@dimen/size_text_16sp" />
+
+</LinearLayout>
+

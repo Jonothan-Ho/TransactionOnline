@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white_pure"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageButton
+            android:id="@+id/ibtn_category"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_layout_white_style_one"
+            android:src="@mipmap/btn_category_normal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/bg_input_style_one">
+
+            <EditText
+                android:id="@+id/edit_query"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:drawableLeft="@mipmap/icon_search"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="输入查询关键字"
+                android:inputType="text"
+                android:paddingLeft="50dp"
+                android:textColor="@color/color_normal_text"
+                android:textColorHint="@color/color_grey_middle"
+                android:textSize="@dimen/size_text_14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_white_pure">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/view_divider"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="时间"
+                android:textColor="@drawable/selector_text_normal_normaltext_checked_lightgreen" />
+
+            <RadioButton
+                android:id="@+id/radio_button2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="距离"
+                android:textColor="@drawable/selector_text_normal_normaltext_checked_lightgreen" />
+
+            <RadioButton
+                android:id="@+id/radio_button3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableRight="@mipmap/icon_order_normal"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="规模"
+                android:textColor="@drawable/selector_text_normal_normaltext_checked_lightgreen" />
+
+            <RadioButton
+                android:id="@+id/radio_button4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableRight="@drawable/selector_radiobutton_arrow_bottom_style_one"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="买"
+                android:textColor="@drawable/selector_text_normal_normaltext_checked_lightgreen" />
+
+            <RadioButton
+                android:id="@+id/radio_button5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:singleLine="true"
+                android:drawableRight="@drawable/selector_radiobutton_arrow_bottom_style_one"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="全国"
+                android:textColor="@drawable/selector_text_normal_normaltext_checked_lightgreen" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/ibtn_mode"
+            android:background="@color/color_grey_dark" />
+
+        <ImageButton
+            android:id="@+id/ibtn_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:src="@drawable/selector_btn_list_page_with_arrow_mode" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_grey_light" />
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_grey_bg" />
+
+</LinearLayout>

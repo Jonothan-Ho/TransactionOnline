@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_bg"
+    android:orientation="vertical"
+    tools:context="com.maimaizaixian.transactiononline.module.hall.ui.DetailsActivity">
+
+    <include layout="@layout/view_title_bar_style_four" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_white_shadow_grey_style_one"
+                android:elevation="1dp"
+                android:padding="10dp"
+                android:translationZ="1dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名称"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/size_text_18sp" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginTop="5dp"
+                    android:text="20.15-10-10 10:10"
+                    android:textColor="@color/color_normal_text"
+                    android:textSize="@dimen/size_text_14sp" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_date"
+                    android:layout_marginTop="10dp"
+                    android:text="类目"
+                    android:textColor="@color/color_normal_text"
+                    android:textSize="@dimen/size_text_14sp" />
+
+                <TextView
+                    android:id="@+id/text_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_date"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/text1"
+                    android:text="毒品"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/size_text_14sp" />
+
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_date"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="联系人"
+                    android:textColor="@color/color_normal_text"
+                    android:textSize="@dimen/size_text_14sp" />
+
+                <TextView
+                    android:id="@+id/text_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_date"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/text2"
+                    android:text="叶良辰"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/size_text_14sp" />
+
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text1"
+                    android:layout_marginTop="20dp"
+                    android:text="数量"
+                    android:textColor="@color/color_normal_text"
+                    android:textSize="@dimen/size_text_14sp" />
+
+                <TextView
+                    android:id="@+id/text_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text1"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/text3"
+                    android:text="7"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/size_text_14sp" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/text2"
+                    android:layout_below="@+id/text2"
+                    android:layout_marginTop="20dp"
+                    android:text="联系电话"
+                    android:textColor="@color/color_normal_text"
+                    android:textSize="@dimen/size_text_14sp" />
+
+                <TextView
+                    android:id="@+id/text_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/text4"
+                    android:text="13214525852"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/size_text_14sp" />
+
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text3"
+                    android:layout_marginTop="20dp"
+                    android:text="属性"
+                    android:textColor="@color/color_normal_text"
+                    android:textSize="@dimen/size_text_14sp" />
+
+                <TextView
+                    android:id="@+id/text_property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text3"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/text3"
+                    android:text="规模优先"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/size_text_14sp" />
+
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text5"
+                    android:layout_marginTop="20dp"
+                    android:text="联系地址"
+                    android:textColor="@color/color_normal_text"
+                    android:textSize="@dimen/size_text_14sp" />
+
+                <TextView
+                    android:id="@+id/text_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text5"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/text3"
+                    android:text="**********"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/size_text_14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_white_shadow_bottom_normal"
+                android:elevation="1dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="请来电时告诉我在买卖在线看到的我发布需求"
+                android:textColor="@color/color_normal_text"
+                android:textSize="@dimen/size_text_14sp"
+                android:translationZ="1dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_white_shadow_grey_style_one"
+                android:elevation="1dp"
+                android:translationZ="1dp">
+
+                <com.maimaizaixian.transactiononline.view.AutoScrollViewPager
+                    android:id="@+id/viewpager_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
+
+                <TextView
+                    android:id="@+id/tv_img_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/viewpager_auto"
+                    android:layout_alignParentRight="true"
+                    android:background="#88000000"
+                    android:padding="10dp"
+                    android:text="4张"
+                    android:textColor="@color/color_white_pure"
+                    android:textSize="@dimen/size_text_16sp" />
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewpager_auto"
+                    android:padding="10dp"
+                    android:text="需求描述"
+                    android:textColor="@color/color_normal_text"
+                    android:textSize="@dimen/size_text_14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewpager_auto"
+                    android:layout_toRightOf="@+id/text7"
+                    android:padding="10dp"
+                    android:text="需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/size_text_14sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/layout_details"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_white_pure"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.maimaizaixian.transactiononline.view.CircleImageView
+            android:id="@id/iv_portrait"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="叶XX"
+            android:textColor="@color/color_black_dark"
+            android:textSize="@dimen/size_text_16sp" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/selector_layout_red_style_one"
+            android:text="删除消息"
+            android:textColor="@color/color_white_pure"
+            android:textSize="@dimen/size_text_18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
